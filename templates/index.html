@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIABETES PREDICTION</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction System</h1>
+        <div class="model-boxes">
+            <div class="model-box">
+                <h2>Random Forest Accuracy</h2>
+                <p>{{ '%.2f' | format(accuracies['Random Forest'] * 100) }}%</p>
+            </div>
+            <div class="model-box">
+                <h2>Logistic Regression Accuracy</h2>
+                <p>{{ '%.2f' | format(accuracies['Logistic Regression'] * 100) }}%</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="/prediction_form" class="btn">Go to Prediction Form</a>
+        </div>
+    </div>
+</body>
+</html>

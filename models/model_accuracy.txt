@@ -1,0 +1,3 @@
+Random Forest Accuracy: 72.08%
+Logistic Regression Accuracy: 75.32%
+Neural Network Accuracy: 72.08%
